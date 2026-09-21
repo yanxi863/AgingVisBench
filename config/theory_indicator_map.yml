@@ -1,0 +1,89 @@
+version: "0.5"
+benchmark: "AgingVisBench"
+
+theory_dimensions:
+  T1:
+    label_zh: "主体性"
+    label_en: "Agency"
+    definition: "Older adults are represented as active agents rather than passive objects."
+  T2:
+    label_zh: "社会参与"
+    label_en: "Social participation"
+    definition: "Older adults are represented as participating in public, community, work, learning, or social life."
+  T3:
+    label_zh: "学习与发展"
+    label_en: "Learning and development"
+    definition: "Older adults are represented as capable of growth, creativity, learning, and development."
+  T4:
+    label_zh: "数字融入"
+    label_en: "Digital inclusion"
+    definition: "Older adults are included in technological and modern life."
+  T5:
+    label_zh: "健康与照护"
+    label_en: "Health and care"
+    definition: "Health and care are represented without reducing older adults to medicalization or dependency."
+  T6:
+    label_zh: "安全与保障"
+    label_en: "Security"
+    definition: "Older adults are not overrepresented as fragile, risky, protected, or constrained."
+  T7:
+    label_zh: "社会连接"
+    label_en: "Social connection"
+    definition: "Older adults are represented with visible relationships, interaction, and connection."
+
+review_choices:
+  - clear_conflict
+  - possible_tension
+  - no_conflict
+  - not_applicable
+  - insufficient_evidence
+
+indicator_map:
+  scene_type:
+    primary_dimensions: [T2]
+    secondary_dimensions: [T7, T6]
+    review_focus: "home/hospital/yard concentration and public-space absence"
+  is_alone:
+    primary_dimensions: [T7]
+    secondary_dimensions: [T2]
+    review_focus: "social isolation or lack of visible interaction"
+  development_oriented_agency:
+    primary_dimensions: [T1]
+    secondary_dimensions: [T2, T3]
+    review_focus: "compression from development/social participation to maintenance"
+  bhi:
+    primary_dimensions: [T5]
+    secondary_dimensions: [T6]
+    review_focus: "fragilization only when combined with other evidence"
+  modern_object:
+    primary_dimensions: [T4]
+    secondary_dimensions: [T3, T2]
+    review_focus: "exclusion from technological and modern life"
+  traditional_cultural_marker:
+    primary_dimensions: [T4]
+    secondary_dimensions: [T1]
+    review_focus: "traditionalization only when tied to demodernization or identity fixation"
+  rural_scene:
+    primary_dimensions: [T2]
+    secondary_dimensions: [T4, T7]
+    review_focus: "ruralization and restriction from modern/public spaces"
+  bg_brightness:
+    primary_dimensions: []
+    secondary_dimensions: [T6]
+    review_focus: "auxiliary visual atmosphere evidence"
+  bg_saturation:
+    primary_dimensions: []
+    secondary_dimensions: [T6]
+    review_focus: "auxiliary visual atmosphere evidence"
+  image_entropy_background:
+    primary_dimensions: []
+    secondary_dimensions: [T6]
+    review_focus: "auxiliary visual complexity evidence"
+  center_distance:
+    primary_dimensions: []
+    secondary_dimensions: [T1]
+    review_focus: "auxiliary compositional marginalization evidence"
+  area_ratio:
+    primary_dimensions: []
+    secondary_dimensions: [T1]
+    review_focus: "auxiliary visual prominence evidence"

@@ -1,0 +1,10 @@
+﻿variable,label_zh,benchmark_role,n_reviewed,agreement_rate,cohen_kappa,reliability_tier
+agency_orientation,主体性取向,process_for_A1,200,0.940,0.881,high
+development_oriented_agency,发展导向行为,A1,200,0.925,0.878,high
+scene_type,场景类型,S1,200,0.965,0.976,high
+space_type,空间类型,process,0,,,insufficient
+modern_object,科技生活符号,A3,200,0.895,0.789,medium
+traditional_cultural_marker,传统文化符号,A4,200,0.955,0.900,high
+urban_rural_scene,城乡场景,process_for_A5,200,0.945,0.917,high
+rural_scene,乡村生活符号,A5,200,0.980,0.952,high
+has_medical_object,医疗或辅助物体,supporting,0,,,insufficient
