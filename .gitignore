@@ -1,0 +1,69 @@
+# Secrets and local overrides
+.env
+.env.*
+!.env.example
+config/pipeline.local.yml
+config/*local*.yml
+
+# Private corpora and generated outputs
+data/
+outputs/
+AI audit image/
+Output data/
+RQ2_analysis_output/
+OLD-RQ2_analysis_output/
+Result/
+archive/
+
+# Python environments, caches, and builds
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+build/
+dist/
+*.egg-info/
+
+# Model weights, checkpoints, and raw response logs
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*_checkpoint.csv
+*_raw_response.*
+raw_responses/
+
+# Generated images and private office/research files
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.bmp
+*.pdf
+*.doc
+*.docx
+*.ppt
+*.pptx
+*.xls
+*.xlsx
+*results_draft*
+*研究方法说明*
+
+# Explicitly reviewed synthetic/documentation assets
+!examples/sample_corpus/**/*.png
+!docs/assets/**/*.png
+!docs/assets/**/*.jpg
+!docs/assets/**/*.jpeg
+!docs/assets/**/*.webp
+
+# IDE and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

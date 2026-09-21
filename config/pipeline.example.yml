@@ -1,0 +1,28 @@
+# Public-safe pipeline example. Copy to config/pipeline.local.yml for local use.
+# The default paths contain no private data and API execution is disabled.
+paths:
+  image_root: "data/images"
+  generated_data_root: "outputs"
+  analysis_output_root: "outputs/analysis"
+  result_root: "outputs/results"
+
+runtime:
+  python_executable: null
+  max_images: null
+  resume: true
+  skip_existing: true
+
+vision:
+  yolo_weights: "models/yolov8s.pt"
+
+api:
+  provider: "dashscope"
+  enabled: false
+  api_key_env: "DASHSCOPE_API_KEY"
+  base_url_env: "DASHSCOPE_BASE_URL"
+  model_env: "DASHSCOPE_MODEL"
+
+models:
+  include: []
+  exclude: []
+
