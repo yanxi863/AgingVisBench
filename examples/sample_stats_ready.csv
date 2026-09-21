@@ -1,0 +1,3 @@
+Model,Folder,Filename,Age,Nationality,Gender,Action_Type,Agency_Level,Scene_Type,Modern_Object,Traditional_Cultural_Marker,Medical_Object_Count,Num_Persons,Is_Alone,Urban_Rural_Scene
+synthetic_model,60yo_Test_Woman,placeholder.png,60yo,Test,Woman,reading,active,home,1,0,0,1,1,unknown_or_mixed
+synthetic_model,75yo_Test_Man,placeholder_2.png,75yo,Test,Man,cooking,active,home,0,0,0,1,1,unknown_or_mixed

@@ -1,0 +1,5 @@
+ai_scene_type,human_scene_type,ai_rural_scene,human_rural_scene,ai_one_class,human_one_class
+home,home,0,0,1,1
+park,street,1,1,1,1
+home,home,0,1,1,1
+unknown,,0,0,1,1

@@ -1,0 +1,20 @@
+paths:
+  image_root: "examples/sample_corpus"
+  generated_data_root: "outputs/synthetic"
+  analysis_output_root: "outputs/synthetic/analysis"
+  result_root: "outputs/synthetic/results"
+runtime:
+  max_images: 1
+  resume: true
+  skip_existing: true
+vision:
+  yolo_weights: "models/yolov8s.pt"
+api:
+  provider: "dashscope"
+  enabled: false
+  api_key_env: "DASHSCOPE_API_KEY"
+  base_url_env: "DASHSCOPE_BASE_URL"
+  model_env: "DASHSCOPE_MODEL"
+models:
+  include: [synthetic_model]
+  exclude: []
